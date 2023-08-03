@@ -35,4 +35,6 @@ Don't forget to install Python 3 and the OVH API
 "pip install ovh"
 https://github.com/ovh/python-ovh
 
-Python by Starnakin, Readme by Xamora
+<br></br>
+#### <ins>*Contributor:*</ins>
+*Python by Starnakin, Readme by Xamora*
