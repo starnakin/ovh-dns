@@ -1,6 +1,6 @@
 # ovh-dns
 ## <ins>First Step:</ins>
-Create an API Key in OVH with at least **"Get"** and **"Put"** permissions. In the text box on the right, enter **"/*"**.
+Create an API Key in OVH with at least **"Get"**,  **"Post"** and **"Put"** permissions. In the text box on the right, enter **"/*"**.
 https://www.ovh.com/auth/api/createToken
 	
 ## <ins>Second Step:</ins>
