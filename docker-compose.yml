@@ -12,3 +12,4 @@ services:
       - CONSUMER_KEY=CONSUMER_KEY
       - SUBDOMAIN=SUBDOMAIN
       - DOMAIN=DOMAIN.com
+      - RECORD_TYPE=A|CNAME
