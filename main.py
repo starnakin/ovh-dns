@@ -18,7 +18,7 @@ while True:
     ip_in = requests.get('https://checkip.amazonaws.com').text.strip()
     ids = client.get('/domain/zone/{}/record'.format(zone), 
         subDomain=subdomain,
-        fieldType="A"
+        fieldType=os.environ["RECORD_TYPE"]
     )
     print(ip_in)
     ip_ext = client.get('/domain/zone/{}/record/{}'.format(zone, ids[0]))["target"]
