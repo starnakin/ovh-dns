@@ -2,7 +2,7 @@ FROM alpine
 
 RUN apk update && apk upgrade
 
-RUN apk install python3 python3-pip git
+RUN apk add python3 python3-pip git
 
 RUN pip3 install --break-system-packages ovh
 
