@@ -4,6 +4,8 @@ from time import sleep
 import requests
 import os
 
+print("ovh-dns start")
+
 client = ovh.Client(
     endpoint=os.environ["ENDPOINT"],
     application_key=os.environ["APP_KEY"],
