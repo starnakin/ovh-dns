@@ -1,0 +1,14 @@
+version: "3"
+services:
+  ovh-dns:
+    container_name: ovh-dns
+    image: ovh-dns
+    build: .
+    restart: always
+    environment:
+      - ENDPOINT=ovh-eu
+      - APP_SECRET=SECRET
+      - APP_KEY=APP_KEY
+      - CONSUMER_KEY=CONSUMER_KEY
+      - SUBDOMAIN=SUBDOMAIN
+      - DOMAIN=DOMAIN.com

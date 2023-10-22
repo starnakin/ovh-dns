@@ -2,16 +2,17 @@ import ovh
 import socket
 from time import sleep
 import requests
+import os
 
 client = ovh.Client(
-    endpoint='',
-    application_key='',
-    application_secret='',
-    consumer_key=''
+    endpoint=os.environ["ENDPOINT"],
+    application_key=os.environ["APP_KEY"],
+    application_secret=os.environ["APP_SECRET"],
+    consumer_key=os.environ["CONSUMER_KEY"]
 )
 
-subdomain=""
-zone="chauvet.pro"
+subdomain=os.environ["CONSUMER_KEY"]
+zone=os.environ["CONSUMER_KEY"]
 
 while True:
     ip_in = requests.get('https://checkip.amazonaws.com').text.strip()
