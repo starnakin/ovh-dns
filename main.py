@@ -16,10 +16,7 @@ client = ovh.Client(
 subdomain=os.environ["SUBDOMAIN"]
 zone=os.environ["DOMAIN"]
 
-print("ovh-dns start")
-
 while True:
-    print("ovh-dns start")
     ip_in = requests.get('https://checkip.amazonaws.com').text.strip()
     
     ids = client.get('/domain/zone/{}/record'.format(zone), 
