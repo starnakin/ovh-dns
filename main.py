@@ -11,8 +11,8 @@ client = ovh.Client(
     consumer_key=os.environ["CONSUMER_KEY"]
 )
 
-subdomain=os.environ["CONSUMER_KEY"]
-zone=os.environ["CONSUMER_KEY"]
+subdomain=os.environ["SUBDOMAIN"]
+zone=os.environ["DOMAIN"]
 
 while True:
     ip_in = requests.get('https://checkip.amazonaws.com').text.strip()
