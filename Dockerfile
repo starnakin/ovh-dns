@@ -1,8 +1,8 @@
-FROM debian
+FROM alpine
 
-RUN apt update && apt upgrade -y
+RUN apk update && apk upgrade -y
 
-RUN apt install -y python3 python3-pip git
+RUN apk install -y python3 python3-pip git
 
 RUN pip3 install --break-system-packages ovh
 
